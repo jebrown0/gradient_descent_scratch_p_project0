@@ -1,0 +1,12 @@
+Acknowledgement
+I would like to express my gratitude to the Kaggle platform and the original dataset creator, Aadharsh Viswanath, for providing the "Aircraft Sensor and Engine Performance" dataset. This dataset has been indispensable for research and experimentation on predictive maintenance and failure detection in aviation engines.
+
+The dataset, titled "Aircraft Sensor and Engine Performance", contains vital aviation sensor data, capturing engine performance metrics and operational settings. It is made available under the MIT License, facilitating educational and research use.
+
+The dataset enables the development and validation of machine learning models which can help predict engine failures, optimize maintenance schedules, and potentially save time, effort, and even lives by preventing unexpected failures in critical systems.
+
+I acknowledge the effort and dedication behind curating and sharing this valuable resource, which has been central to the advancement of my learning and project work in the field of AI and machine learning.
+
+Dataset Source:
+Kaggle - Aircraft Sensor and Engine Performance
+Author: Aadharsh Viswanath
