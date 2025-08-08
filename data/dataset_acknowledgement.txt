@@ -1,0 +1,35 @@
+Dataset Acknowledgement
+
+
+Student Performance (Multiple Linear Regression)
+
+This project utilizes the Student Performance (Multiple Linear Regression) dataset, originally published by Nikhil Narayan on Kaggle. The dataset was created for educational and illustrative purposes and consists of 10,000 synthetic student records. Each record contains a range of predictors relevant to academic performance, including:
+
+	Hours Studied: Numeric value representing total study hours.
+
+	Previous Scores: Numeric value representing prior test scores.
+
+	Extracurricular Activities: Categorical value (Yes/No) indicating participation in extracurricular activities.
+
+	Sleep Hours: Numeric value for average daily sleep.
+
+	Sample Question Papers Practiced: Integer count of practice papers completed.
+
+	Performance Index: Integer index (target variable) ranging from 10 to 100, representing overall academic performance.
+
+
+
+Purpose & License
+
+	This dataset is intended for research, demonstration, and experimentation with regression analysis methodologies. It allows data scientists and machine learning engineers to explore relationships between common study factors and academic outcomes in a controlled, reproducible environment. The dataset is synthetic and may not reflect real-world relationships; results and models built using this data are intended to illustrate methodologies rather than provide actionable insights for educational policy or individualized recommendations.
+
+The dataset is free to share and use, with no restrictions for educational or non-commercial purposes. All derivative work should cite the original Kaggle source and acknowledge the illustrative nature of these relationships.
+
+Citation
+Student Performance (Multiple Linear Regression) Dataset
+Creator: Nikhil Narayan
+Published on Kaggle: https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression
+License: Free to share and use for educational purposes.
+
+Acknowledgement Statement
+I acknowledge and thank Nikhil Narayan and Kaggle for making the Student Performance (Multiple Linear Regression) dataset publicly available. This resource has enabled transparent demonstration and learning of custom multiple linear regression techniques, statistical analysis, and model diagnostics for foundational machine learning training.
