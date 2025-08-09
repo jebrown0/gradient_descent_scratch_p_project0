@@ -9,27 +9,27 @@ This project demonstrates a full, from-scratch machine learning workflow for pre
 ## Project Structure
 
 - gradient_descent_scratch_p_project0/
-- - src
-- - - main.py                                   			# Orchestrates full ML workflow
-- - - functions.py                              			# Predict function and regression metrics
-- - - models.py                                 			# Gradient Descent and LASSO Regression
+  - src
+    - main.py                                   			# Orchestrates full ML workflow
+    - functions.py                              			# Predict function and regression metrics
+    - models.py                                 			# Gradient Descent and LASSO Regression
 
 - data/dataset_a_s_e_p/Student_Performance/ 
-- - Student_Performance.csv                   		# Our dataset
-- - dataset_acknowledgement.txt               	# Dataset citation and acknowledgement
+  - Student_Performance.csv                   				# Our dataset
+  - dataset_acknowledgement.txt               				# Dataset citation and acknowledgement
 
-- README.md                                     		# This file
+- README.md                                     			# This file
 
 - notebooks/
-- - multi_g_d_main.ipynb                      		# Main Jupyter Notebook
-- - project_documentation.ipynb               	# Project documentation (Read First)
+  - multi_g_d_main.ipynb                      				# Main Jupyter Notebook
+  - project_documentation.ipynb               				# Project documentation (Read First)
 
 - plots
-- - Demo_Cost_Over_Iterations.png
-- - G_D_Training_Data_Cost_Over_Iterations.png
-- - Histogram_of_Residuals.png
-- - LASSO_Training_Data_Cost_Over_Iterations.png
-- - Standardized_Residual_Plot.png
+  - Demo_Cost_Over_Iterations.png
+  - G_D_Training_Data_Cost_Over_Iterations.png
+  - Histogram_of_Residuals.png
+  - LASSO_Training_Data_Cost_Over_Iterations.png
+  - Standardized_Residual_Plot.png
 
 
 ## Modules
@@ -78,21 +78,21 @@ This plot visualizes the standardized residuals the standardized residuals (the 
 between the true test set targets and the model’s predictions, scaled by their standard deviation) versus the true target variable 'Y'.
 
 - Horizontal Lines:
-- - The solid green line at 0 indicates perfect predictions (no error).
-- - The dashed red lines at +2 and -2 highlight the region where most residuals should fall if the model fits well and errors are 
+  - The solid green line at 0 indicates perfect predictions (no error).
+  - The dashed red lines at +2 and -2 highlight the region where most residuals should fall if the model fits well and errors are 
 approximately normally distributed.
 
 - What to Look For:
-- - Residuals should be randomly dispersed around zero, with no obvious patterns or systematic structure.
-- - Most points should lie between -2 and +2. Outliers beyond these lines may indicate data anomalies, poor fit, or the need for model refinement.
+  - Residuals should be randomly dispersed around zero, with no obvious patterns or systematic structure.
+  - Most points should lie between -2 and +2. Outliers beyond these lines may indicate data anomalies, poor fit, or the need for model refinement.
 
 - Why This Plot Is Important
-- - Model Health Check:
-- - - A well-behaved residual plot (random scatter, no trend, minimal outliers) suggests the assumptions of linear regression (constant variance, independence, and linearity) are reasonably met.
-- - Detection of Issues:
-- - - Patterns or “fanning” could signal heteroscedasticity (non-constant error variance), autocorrelation, or missed nonlinear structure—all issues that motivate further data cleaning, feature engineering, or model selection.
-- - Interpretability:
-- - - Since all code is written from scratch (without scikit-learn), producing and interpreting this plot demonstrates engineering rigor and a foundational understanding of residuals—key for robust model evaluation and improvement.
+  - Model Health Check:
+    - A well-behaved residual plot (random scatter, no trend, minimal outliers) suggests the assumptions of linear regression (constant variance, independence, and linearity) are reasonably met.
+  - Detection of Issues:
+    - Patterns or “fanning” could signal heteroscedasticity (non-constant error variance), autocorrelation, or missed nonlinear structure—all issues that motivate further data cleaning, feature engineering, or model selection.
+  - Interpretability:
+    - Since all code is written from scratch (without scikit-learn), producing and interpreting this plot demonstrates engineering rigor and a foundational understanding of residuals—key for robust model evaluation and improvement.
 
 
 ## Usage
