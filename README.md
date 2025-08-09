@@ -8,19 +8,28 @@ This project demonstrates a full, from-scratch machine learning workflow for pre
 
 ## Project Structure
 
-gradient_descent_scratch_p_project0/
-│
-├── src
-│   ├── main.py                                   # Orchestrates full ML workflow
-│   ├── functions.py                              # Predict function and regression metrics
-│   ├── models.py                                 # Gradient Descent and LASSO Regression
-├── data/dataset_a_s_e_p/Student_Performance/ 
-│   ├── Student_Performance.csv                   # Our dataset
-│   ├── dataset_acknowledgement.txt               # Dataset citation and acknowledgement        
-├── README.md                                     # This file
-├── notebooks/
-    ├── multi_g_d_main.ipynb                      # Main Jupyter Notebook
-    ├── project_documentation.ipynb               # Project documentation (Read First)
+- gradient_descent_scratch_p_project0/
+- - src
+- - - main.py                                   			# Orchestrates full ML workflow
+- - - functions.py                              			# Predict function and regression metrics
+- - - models.py                                 			# Gradient Descent and LASSO Regression
+
+- data/dataset_a_s_e_p/Student_Performance/ 
+- - Student_Performance.csv                   		# Our dataset
+- - dataset_acknowledgement.txt               	# Dataset citation and acknowledgement
+
+- README.md                                     		# This file
+
+- notebooks/
+- - multi_g_d_main.ipynb                      		# Main Jupyter Notebook
+- - project_documentation.ipynb               	# Project documentation (Read First)
+
+- plots
+- - Demo_Cost_Over_Iterations.png
+- - G_D_Training_Data_Cost_Over_Iterations.png
+- - Histogram_of_Residuals.png
+- - LASSO_Training_Data_Cost_Over_Iterations.png
+- - Standardized_Residual_Plot.png
 
 
 ## Modules
@@ -37,6 +46,7 @@ gradient_descent_scratch_p_project0/
   Contains:
   - `g_d_func`: Custom batch gradient descent for linear regression.
   - `lasso_g_d_func`: Batch gradient descent with L1 regularization (LASSO).
+
 
 ## Workflow Summary
 
@@ -58,20 +68,53 @@ gradient_descent_scratch_p_project0/
 16. **Perform residual analysis** with standardized residual plots and histograms.
 17. **Explain residuals and feature importance** based on visual diagnostics.
 
+
+## Residual Analysis
+
+### Standardized Residual Plot (Test Set)
+![Standardized Residual Plot](plots/Standardized_Residual_Plot.png)
+
+This plot visualizes the standardized residuals the standardized residuals (the errors 
+between the true test set targets and the model’s predictions, scaled by their standard deviation) versus the true target variable 'Y'.
+
+- Horizontal Lines:
+- - The solid green line at 0 indicates perfect predictions (no error).
+- - The dashed red lines at +2 and -2 highlight the region where most residuals should fall if the model fits well and errors are 
+approximately normally distributed.
+
+- What to Look For:
+- - Residuals should be randomly dispersed around zero, with no obvious patterns or systematic structure.
+- - Most points should lie between -2 and +2. Outliers beyond these lines may indicate data anomalies, poor fit, or the need for model refinement.
+
+- Why This Plot Is Important
+- - Model Health Check:
+- - - A well-behaved residual plot (random scatter, no trend, minimal outliers) suggests the assumptions of linear regression (constant variance, independence, and linearity) are reasonably met.
+- - Detection of Issues:
+- - - Patterns or “fanning” could signal heteroscedasticity (non-constant error variance), autocorrelation, or missed nonlinear structure—all issues that motivate further data cleaning, feature engineering, or model selection.
+- - Interpretability:
+- - - Since all code is written from scratch (without scikit-learn), producing and interpreting this plot demonstrates engineering rigor and a foundational understanding of residuals—key for robust model evaluation and improvement.
+
+
 ## Usage
 
 1. Place the dataset CSV (`Student_Performance.csv`) in the specified folder:
    - `../data/dataset_a_s_e_p/Student_Performance/`
 
 2. Install required Python packages:
-   - pip install numpy pandas matplotlib
+       ''' (shell)
+       pip install numpy pandas matplotlib
+       '''
 
 3. Run the complete workflow:
-   - python main.py
+        ''' (shell)
+	python main.py
+	'''
 
 4. To reuse core functions or models, import from the respective modules:
-   - from functions import predict, rmse_mae_r2
-   - from models import g_d_func, lasso_g_d_func
+   	''' (python)
+	from functions import predict, rmse_mae_r2
+   	from models import g_d_func, lasso_g_d_func
+	'''
 
 ## Engineering and Project Notes
 
@@ -95,4 +138,14 @@ For further details, consult the comprehensive docstrings in `functions.py` and 
 
 ---
 
+Link to Jupyter Notebooks: 
+- https://github.com/jebrown0/gradient_descent_scratch_p_project0/blob/main/notebooks/project_documentation.ipynb
+- https://github.com/jebrown0/gradient_descent_scratch_p_project0/blob/main/notebooks/multi_g_d_main.ipynb
+
+---
+
 **Good luck and happy modeling!**
+
+---
+Contact Information: 
+https://www.linkedin.com/in/joshua-e-brown-a92b9233b/
