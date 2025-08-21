@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project demonstrates a full, from-scratch machine learning workflow for predicting student performance. It uses only base scientific Python tools (**NumPy, Pandas, Matplotlib, Seaborn**) and custom modules for all core machine learning algorithms, explicitly avoiding scikit-learn. The goal is to understand, implement, and explain classical regression techniques—including feature scaling, batch gradient descent, and LASSO regularization—on simulated data.
+This project demonstrates a full, from-scratch machine learning workflow for predicting student performance. It uses only base scientific Python tools (**NumPy, Pandas, Matplotlib, Seaborn**) and custom modules for all core machine learning algorithms, explicitly avoiding scikit-learn. The goal is to understand, implement, and explain classical regression techniques—including feature scaling, batch gradient descent, and LASSO regression—on simulated data.
 
 ## Project Structure
 
